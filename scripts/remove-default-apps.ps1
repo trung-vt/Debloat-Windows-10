@@ -11,7 +11,8 @@ do {} until (Elevate-Privileges SeTakeOwnershipPrivilege)
 Write-Output "Uninstalling default apps"
 $apps = @(
     # default Windows 10 apps
-    "Microsoft.549981C3F5F10" #Cortana
+    # Cortana not removed? AppxPackage name changed?
+    "Microsoft.549981C3F5F10" #Cortana #https://www.howtogeek.com/728558/how-to-uninstall-and-reinstall-cortana-on-windows-10/
     "Microsoft.3DBuilder"
     "Microsoft.Appconnector"
     "Microsoft.BingFinance"
