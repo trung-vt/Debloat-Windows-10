@@ -242,13 +242,17 @@ $ips = @(
     "76.76.21.164"   # VSCodium connects to this (WTF?)
     "76.76.21.123"   # VSCodium connects to this
     "76.76.21.9"     # VSCodium connects to this
-    "54.148.148.62"   # LibreFox connects to this (Amazon AWS)
+    # "54.148.148.62"   # LibreWolf connects to this (Amazon AWS)
+# https://librewolf.net/docs/faq/#does-librewolf-make-any-outgoing-connections
+#   Take LibreWolf's word for now...
+# https://gitlab.com/librewolf-community/browser/linux/-/issues/138
+#   But this is still worrying...
 
     # Akamai Technologies, Hanoi | explorer.exe connects to using port 80 (WTF?)
     "23.53.210.176"
 
     # Verizon Business, Taiwan
-    "117.18.237.29"   # LibreFox connects to this
+    # "117.18.237.29"   # LibreWolf connects to this, turns out it's the server that hosts github
 )
 Remove-NetFirewallRule -DisplayName "Block Telemetry IPs" -ErrorAction SilentlyContinue
 New-NetFirewallRule -DisplayName "Block Telemetry IPs" -Direction Outbound `
