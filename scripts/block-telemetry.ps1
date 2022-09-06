@@ -236,6 +236,9 @@ $ips = @(
     "8.36.113.139"
     "8.36.80.244"
     "216.228.121.209"
+
+    # Akamai Technologies, Hanoi | explorer.exe connects to using port 80 (WTF?)
+    "23.53.210.176"
 )
 Remove-NetFirewallRule -DisplayName "Block Telemetry IPs" -ErrorAction SilentlyContinue
 New-NetFirewallRule -DisplayName "Block Telemetry IPs" -Direction Outbound `
