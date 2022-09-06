@@ -218,6 +218,7 @@ $ips = @(
     # "65.52.108.33"   # Causes problems with Microsoft Store
     "65.55.108.23"
     "64.4.54.254"
+    "204.79.197.203"   # backgroundTaskHost.exe connects to this
 
     # NVIDIA telemetry
     "8.36.80.197"
@@ -237,8 +238,17 @@ $ips = @(
     "8.36.80.244"
     "216.228.121.209"
 
+    # Amazon.com 
+    "76.76.21.164"   # VSCodium connects to this (WTF?)
+    "76.76.21.123"   # VSCodium connects to this
+    "76.76.21.9"     # VSCodium connects to this
+    "54.148.148.62"   # LibreFox connects to this (Amazon AWS)
+
     # Akamai Technologies, Hanoi | explorer.exe connects to using port 80 (WTF?)
     "23.53.210.176"
+
+    # Verizon Business, Taiwan
+    "117.18.237.29"   # LibreFox connects to this
 )
 Remove-NetFirewallRule -DisplayName "Block Telemetry IPs" -ErrorAction SilentlyContinue
 New-NetFirewallRule -DisplayName "Block Telemetry IPs" -Direction Outbound `
