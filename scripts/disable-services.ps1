@@ -8,14 +8,14 @@ $services = @(
     "dmwappushservice"                         # WAP Push Message Routing Service (see known issues)
     "lfsvc"                                    # Geolocation Service
     "MapsBroker"                               # Downloaded Maps Manager
-    "NetTcpPortSharing"                        # Net.Tcp Port Sharing Service
+    "NetTcpPortSharing"                        # Net.Tcp Port Sharing Service (Will this break WSL?)
     "RemoteAccess"                             # Routing and Remote Access
     "RemoteRegistry"                           # Remote Registry
     "SharedAccess"                             # Internet Connection Sharing (ICS)
     "TrkWks"                                   # Distributed Link Tracking Client
     "WbioSrvc"                                 # Windows Biometric Service (required for Fingerprint reader / facial detection)
     #"WlanSvc"                                 # WLAN AutoConfig (Disabling this can cause issues with wifi connectivity)
-    "WMPNetworkSvc"                            # Windows Media Player Network Sharing Service
+    "WMPNetworkSvc"                            # Windows Media Player Network Sharing Service (Cannot find?)
     #"wscsvc"                                  # Windows Security Center Service
     #"WSearch"                                 # Windows Search
     "XblAuthManager"                           # Xbox Live Auth Manager
