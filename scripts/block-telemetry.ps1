@@ -219,6 +219,16 @@ $ips = @(
     "65.55.108.23"
     "64.4.54.254"
     "204.79.197.203"   # backgroundTaskHost.exe connects to this
+    # "52.148.82.138"    # License Management, Needed to use WIFI
+    "13.107.4.52"    # Microsoft Azure
+    "20.86.173.234"   #  Microsoft Azure, Module Name : DsmSvc (Device Setup Manager, install drivers for devices)
+    "152.199.40.78"   # Verizon Internet Services, US (WHY???) 
+
+    # (From reddit) Windows telemetry IP ranges
+    "131.253.0.0/16"
+    "134.170.0.0/16"
+    "137.116.0.0/16"
+
 
     # NVIDIA telemetry
     "8.36.80.197"
@@ -248,8 +258,9 @@ $ips = @(
 # https://gitlab.com/librewolf-community/browser/linux/-/issues/138
 #   But this is still worrying...
 
-    # Akamai Technologies, Hanoi | explorer.exe connects to using port 80 (WTF?)
-    "23.53.210.176"
+    # Akamai Technologies
+    "23.53.210.176" # Akamai Technologies, Hanoi | explorer.exe connects to using port 80 (WTF?)
+    "104.67.51.151" # Akamai Technologies, HCM City
 
     # Verizon Business, Taiwan
     # "117.18.237.29"   # LibreWolf connects to this, turns out it's the server that hosts github
